@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * print_alphabet - entry point
- * Return: 0
+ * print_alphabet - in lower case
+ * Return 0
  */
 void print_alphabet(void)
 {
-	char j;
+	char i;
 
-	for (j = 'a'; j <= 'z'; j++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		_putchar(j);
+		_putchar(i);
 	}
 	_putchar('\n');
 }
