@@ -6,7 +6,6 @@
  * @c: the character to check
  * Return: 1 if digit, 0 otherwise
  */
-
 int _isdigit(int c)
 {
   return (c >= '0' && c <= '9');
@@ -17,7 +16,6 @@ int _isdigit(int c)
  * @s: the string whose length to check
  * Return: integer length of string
  */
-
 int _strlen(char *s)
 {
 	int i = 0;
@@ -33,7 +31,6 @@ int _strlen(char *s)
  * @s2: the second big number string
  * Return: the product big number string
  */
-
 char *big_multiply(char *s1, char *s2)
 {
 	char *r;
@@ -77,14 +74,12 @@ char *big_multiply(char *s1, char *s2)
 	return (r);
 }
 
-
 /**
  * main - multiply two big number strings
  * @argc: the number of arguments
  * @argv: the argument vector
  * Return: Always 0 on success.
  */
-
 int main(int argc, char **argv)
 {
 	char *r;
