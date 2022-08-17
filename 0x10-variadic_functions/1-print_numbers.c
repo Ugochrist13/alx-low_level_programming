@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_numbers - print each number with separator, followed by a newline
- * @separator: string to be printed between numbers
- * @n: number of args passed
+ * print_numbers - prints numbers, followed by a new line.
+ * @separator: the string to be printed between numbers
+ * @n: count of parameters
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
@@ -12,7 +12,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list list;
 
 	va_start(list, n);
-
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", va_arg(list, int));
@@ -20,5 +19,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 	}
 	printf("\n");
+
 	va_end(list);
 }
